@@ -1,0 +1,31 @@
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="{{cover}}" mode="widthFix"></image>
+      <view class="cu-tag bg-shadeTop">{{photoNum}}张</view>
+      <view class="cu-bar bg-shadeBottom">
+        <!-- <text class="text-cut">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。</text> -->
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{avatar}});"></view>
+        <view class="content flex-sub">
+
+          <view class="text-gray text-sm flex justify-between">
+            <view class="text-black">{{name}}</view>
+            <view class="text-gray text-sm">
+              {{basicInfo}}
+            </view>
+          </view>
+          <view class="text-gray text-sm flex justify-between">
+           {{address}}
+            <view class="text-black text-sm">
+              <text class="cuIcon-read margin-lr-xs"></text>{{school}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

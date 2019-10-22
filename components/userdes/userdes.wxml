@@ -1,0 +1,8 @@
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>{{destitle}}
+  </view>
+</view>
+<view class="padding bg-white">
+  <text class="text-left padding">{{descontent}}</text>
+</view>

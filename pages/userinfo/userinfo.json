@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "userdes": "/components/userdes/userdes",
+    "components-toast":"/components/toast/toast"
+  }
+}

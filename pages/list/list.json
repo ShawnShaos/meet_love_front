@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "userpreview": "/components/userpreview/userpreview"
+  }
+}

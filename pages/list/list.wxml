@@ -1,0 +1,7 @@
+<cu-custom bgColor="bg-gradual-pink">
+  <view slot="content">卡片</view>
+</cu-custom>
+
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <userpreview name="何玲"></userpreview>
+</view>

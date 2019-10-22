@@ -1,0 +1,109 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">编辑资料</view>
+</cu-custom>
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    图片上传
+  </view>
+  <view class="action">
+    0/1
+  </view>
+</view>
+<view class="cu-form-group">
+  <view class="grid col-4 grid-square flex-sub">
+    <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+      <image src='{{imgList[index]}}' mode='aspectFill'></image>
+      <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+        <text class="cuIcon-close"></text>
+      </view>
+    </view>
+    <view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+      <text class="cuIcon-cameraadd"></text>
+    </view>
+  </view>
+</view>
+<view class="cu-form-group">
+  <view class="title">昵称</view>
+  <input placeholder="请输入昵称"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">性别</view>
+  <input placeholder="">男</input>
+</view>
+<view class="cu-form-group">
+  <view class="title">生日</view>
+  <input placeholder="" value='1993-02-02'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">工作生活地</view>
+  <input placeholder="" value='四川 成都'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">身高</view>
+  <input placeholder="" value='172cm'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">毕业学校</view>
+  <input placeholder="" value='福州大学'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">最高学历</view>
+  <input placeholder="" value='本科'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">行业/职业</view>
+  <input placeholder="" value='IT/互联网'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">收入</view>
+  <input placeholder="" value='10-20w'></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">微信号</view>
+  <input placeholder="" value='adasdadasda'></input>
+</view>
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>关于我
+  </view>
+   <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="menuModal">设置</button>
+    </view>
+</view>
+<view class="padding bg-white">
+  <text class="text-cut  " style="display:block;">大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的</text>
+</view>
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>兴趣爱好
+  </view>
+   <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="menuModal">设置</button>
+    </view>
+</view>
+<view class="padding bg-white">
+  <text class="text-cut " style="display:block;">大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的</text>
+</view>
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>感情观
+  </view>
+   <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="menuModal">设置</button>
+    </view>
+</view>
+<view class="padding bg-white">
+  <text class="text-cut " style="display:block;">大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的</text>
+</view>
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>心仪的TA
+  </view>
+   <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="menuModal">设置</button>
+    </view>
+</view>
+<view class="padding bg-white">
+  <text class="text-cut " style="display:block;">大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的大家好才是横的好大家好才是横的</text>
+</view>

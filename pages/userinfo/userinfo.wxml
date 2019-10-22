@@ -1,0 +1,53 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">用户信息</view>
+</cu-custom>
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key bindtap="previewImg" data-index="{{index}}">
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+<view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{avatar}});"></view>
+        <view class="content flex-sub">
+
+          <view class="text-gray text-sm flex justify-between">
+            <view class="text-black">何玲</view>
+            <view class="text-gray text-sm">
+             27岁 | 天蝎座 | 162cm | IT/互联网 
+            </view>
+          </view>
+          <view class="text-gray text-sm flex justify-between">
+          四川 成都
+            <view class="text-black text-sm">
+              <text class="cuIcon-read margin-lr-xs"></text>电子科技大学 本科
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+<userdes destitle="关于我" descontent="积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总"></userdes>
+
+
+<userdes destitle="兴趣爱好" descontent="积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总"></userdes>
+
+<userdes destitle="感情观" descontent="积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总积极乐观，一个爱健身的IT从业者。此外，喜欢摄影，出去扫街总"></userdes>
+<view class="padding-xl bg-white">
+</view>
+
+<view class="cu-bar  justify-center user-operation">
+  <button class="cu-btn icon xlg bg-white shadow" bindtap='chat'>
+    <text class="cuIcon-community icon-lg "></text>
+  </button>
+  <button class="cu-btn icon xlg bg-white shadow">
+    <text class="cuIcon-favor icon-lg"></text>
+  </button>
+  <button class="cu-btn icon xlg {{like.class}} shadow" bindtap='like'>
+    <text class="cuIcon-like icon-lg"></text>
+  </button>
+</view>
+<!-- 自定义弹窗模板 -->
+<components-toast class='mydialog'></components-toast> 

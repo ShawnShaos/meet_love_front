@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class='userinfo-item'>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="user-attention">
+      <view class='user-attention-list user-attention-list-line'>
+        <text>8</text>
+        <text class='user-attention-list-tag'>我喜欢的</text>
+      </view>
+      <view class='user-attention-list '>
+        <text>4</text>
+        <text class='user-attention-list-tag'>喜欢我的</text>
+      </view>
+    </view>
+  </view>
+  <view class='user-line'></view>
+  <view class='user-menu'>
+    <view class='user-menu-item'>
+        <image class="user-menu-image" src="../../static/center/education.png" background-size="cover"></image>
+        <text class='user-menu-text'>学历认证</text>
+    </view>
+    <view class='user-menu-item'>
+        <image class="user-menu-image" src="../../static/center/material.png" background-size="cover"></image>
+        <text class='user-menu-text'>编辑资料</text>
+    </view>
+    <view class='user-menu-item'>
+        <image class="user-menu-image" src="../../static/center/dynamic.png" background-size="cover"></image>
+        <text class='user-menu-text'>我的动态</text>
+    </view>
+    <view class='user-menu-item'>
+        <image class="user-menu-image" src="../../static/center/help.png" background-size="cover"></image>
+        <text class='user-menu-text'>帮助中心</text>
+    </view>
+  </view>
+  <!-- <view class='user-recommendd'>
+    <text>推荐给好友</text>
+  </view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

@@ -1,0 +1,25 @@
+/* pages/userinfo/userinfo.wxss */
+.user-operation{
+  position:fixed;
+  bottom:0;
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+.user-operation>button{
+ margin: 20rpx
+}
+
+button.icon.xlg {
+	width: 110rpx;
+	height: 110rpx;
+}
+
+.icon-lg {
+	font-size: 55rpx
+}
+
+page{
+  background-color:white
+}
